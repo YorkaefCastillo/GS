@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS</title>
+    <!--Estilo De La Pagina -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Estetica.css">
+    <!--Estilo De La Pagina -->
+</head>
+<body>
+    
+    <header>Gasto Semanal</header>
+    <main>
+        <div class="row">
+            <div class="col ">
+                <div class="contenido primario">
+                    <h2 class="text-center"> ▼ Añade tus gastos aqui ▼ </h2>
+                        <form id="agregar-gasto" action="#">
+                            <div class="form-group">
+                                <label for="gasto">Gasto:</label>
+                                <input type="text" class="form-control" id="gasto" placeholder="Nombre Gasto">
+                            </div>
+                            <div class="form-group">
+                                <label for="cantidad">Cantidad:</label>
+                                <input type="text" class="form-control" id="cantidad" placeholder="Ingresa Cantidad">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Agregar</button>
+                        </form>
+                    
+                </div> <!--.contenido-->
+            </div> <!--.col-->
+
+            <div class="col colTwo">
+                <div class="contenido secundario">
+                    
+                    <h2 class="text-center"> ↨ Listado ↨</h2>
+
+                    <div id="gastos">
+                        <ul class="list-group"></ul>
+                    </div>
+                    <div id="presupuesto" class="presupuesto">
+                        <div class="alert alert-primary">
+                            <p>Presupuesto: $ <span id="total"></span> </p>
+                        </div>
+                        <div class="restante alert alert-success">
+                            <p>Restante: $<span id="restante"></span></p>
+                        </div>
+                    </div> <!--.presupuesto-->
+                </div> <!--.contenido-->
+            </div><!--.col-->
+        </div> <!--.row-->
+    </main>
+    <!--Scrip-->
+    <script src="GS.js"></script>
+    <!--Scrip-->
+    <center>
+        <font size="3" color="White" face="Times New Roman">Cristopher Castillo 2021®</font>
+        </center>
+</body>
+</html>
